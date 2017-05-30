@@ -21,7 +21,9 @@ public class HeaderSteps extends BaseSteps {
 	@Given("User is on $RWA front end")
 	public void go (String element) throws IOException{
 		getHeaderPage().NavigateToRWA(element);
-		
+		test1321
+		rqeuytewq
+		kagsdjh
 	}
 	
 
@@ -30,6 +32,7 @@ public class HeaderSteps extends BaseSteps {
 @When("User check the RWA homepage header")
 public void checkHeader(){
 	getHeaderPage().checkHeader();
+	khagsjh
 }
 
 //HeaderCheck- check display for any selector where given -Dima
