@@ -32,6 +32,7 @@ public class HeaderSteps extends BaseSteps {
 @When("User check the RWA homepage header")
 public void checkHeader(){
 	getHeaderPage().checkHeader();
+	khagsjh
 }
 
 //HeaderCheck- check display for any selector where given -Dima
