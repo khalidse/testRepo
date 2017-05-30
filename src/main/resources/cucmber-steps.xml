@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	
+  <bean id="driverProvider" class="jo.aspire.web.automationUtil.DriverProvider" >
+  </bean>
+
+ 
+
+
+	<bean id="pageFactory" class="aspire.com.pages.PageFactory">
+		<constructor-arg ref="driverProvider" />
+	</bean>
+
+
+  
+</beans>

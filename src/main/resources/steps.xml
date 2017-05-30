@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="driverProvider" class="jo.aspire.web.automationUtil.DriverProvider">
+	</bean>
+
+
+
+
+	<bean id="webDriverProvider" class="jo.aspire.generic.CustomPerStoryWebDriverSteps">
+		<constructor-arg ref="driverProvider" />
+	</bean>
+
+	<bean id="reportWebDriverHandler" class="com.aspire.automationReport.ReportWebDriverHandler">
+		<constructor-arg ref="driverProvider" />
+	</bean>
+
+	<bean id="pageFactory" class="com.univision.radio.pages.PageFactory">
+		<constructor-arg ref="driverProvider" />
+	</bean>
+
+	<bean id="Steps" class="com.univision.radio.steps.Steps">
+		<constructor-arg ref="pageFactory" />
+	</bean>
+	<bean id="Steps2" class="com.univision.radio.steps.Steps2">
+		<constructor-arg ref="pageFactory" />
+	</bean>
+	<bean id="lifecycleSteps" class="com.univision.radio.steps.LifecycleSteps">
+		<constructor-arg ref="pageFactory" />
+	</bean>
+	
+	<bean id="PromoSteps" class="com.univision.radio.steps.PromoSteps">
+		<constructor-arg ref="pageFactory" />
+	</bean>
+	
+	<bean id="NavigationSteps" class="com.univision.radio.steps.NavigationSteps">
+		<constructor-arg ref="pageFactory" />
+	</bean>
+
+    <bean id="HeaderSteps" class="com.univision.radio.steps.HeaderSteps">
+		<constructor-arg ref="pageFactory" />
+	</bean>
+
+</beans>

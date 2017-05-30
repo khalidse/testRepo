@@ -1,0 +1,69 @@
+[{
+		"name": "chrome",
+		"execute": "true",
+		"isRemote": "false",
+		"isMobile": "false",
+		"remote": {
+			"remoteType": "saucelab",
+			"remoteUrl": "https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub"
+		},
+		"local": {
+			"isSecurityTest": "false",
+			"isProxy": "false",
+			"proxy": {
+				"proxyHost": "10.200.110.129",
+				"proxyPort": "8085"
+			}
+		},
+		"capabilities": {
+			"browser": "chrome",
+			"browser_version": "53.0",
+			"os": "OS X",
+			"os_version": "Sierra",
+			"project": "WEB ASPIRE TEMPLATE TEST",
+			"acceptSslCerts": "true",
+			"browserstack.debug": "true"
+		},
+		"preferences": {
+			"profile.default_content_settings.popups": "0",
+			"profile.default_content_setting_values.notifications": "2",
+			"download.default_directory": "/Users/omarkhabbas/Documents/Temp",
+			"": ""
+		},
+		"properties": null,
+		"arguments": ["start-maximized", "disable-popup-blocking", "test-type", "--disable-extensions"]
+	},
+	{
+	"name": "firefox",
+	"execute": "false",
+	"isRemote": "false",
+	"isMobile": "false",
+	"remote": {
+		"remoteType": "localhost",
+		"remoteUrl": "https://omaraspire1:psaTpDqUXqS7py41dYjT@hub-cloud.browserstack.com/wd/hub"
+	},
+	"local": {
+		"isSecurityTest": "false",
+		"isProxy": "false",
+		"proxy": {
+			"proxyHost": "10.200.110.129",
+			"proxyPort": "8085"
+		}
+	},
+	"capabilities": {
+		"browser": "firefox",
+		"browser_version": "47.0",
+		"os": "OS X",
+		"os_version": "El Capitan",
+		"project": "WEB ASPIRE TEMPLATE TEST",
+		"acceptSslCerts": "true",
+		"browserstack.debug": "true"
+	},
+	"preferences": {
+		"profile.default_content_settings.popups": 0,
+		"profile.default_content_setting_values.notifications": 2
+	},
+	"properties": null,
+	"arguments": ["start-maximized", "disable-popup-blocking", "test-type", "--disable-extensions"]
+}
+]
